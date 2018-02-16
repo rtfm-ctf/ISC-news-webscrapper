@@ -3,7 +3,7 @@ Telegram bot to scrap daily infosec news from SANS Internet Storm Center podcast
 
 ##Installing
 ```
-pip install -r requirements
+pip3 install -r requirements
 ```
 
 ##Setup
@@ -14,5 +14,5 @@ export TELEGRAM_CHAT_GROUP_ID=<chat or group id here>
 ```
 ##Running
 ```
-python ics_scrapper.py
+python3 ics_scrapper.py
 ```
