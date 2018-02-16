@@ -1,0 +1,5 @@
+#!/bin/bash
+
+export TELEGRAM_BOT_API_TOKEN=
+export TELEGRAM_CHAT_GROUP_ID=
+
