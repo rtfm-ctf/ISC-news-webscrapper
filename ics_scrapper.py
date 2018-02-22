@@ -14,7 +14,7 @@ def news(bot,update):
 	req = requests.get(url)
 	page_soup = BeautifulSoup(req.text, "html.parser")
 	string = page_soup.blockquote
-	pattern = (r'(<blockquote>\n)(.*?)(<br/> <a href=\")(.*?)(\".*?<br/><br/>)(.*?)(<br/> <a href=\")(.*?)(\".*?<br/><br/>)(.*?)(<br/> <a href=\")(.*?)(\".*?<br/><br/>)')
+	pattern = (r'(<blockquote>\n)(.*?)(<br\/> <a href=\")(.*?)(\".*?<br/><br/>)(.*?)(.*?)(<br\/> <a href=\")(.*?)(\".*?<br/><br/>)(.*?)(<br/> <a href=\")(.*?)(.*?\n</blockquote>)')
 	m = re.match(pattern, str(string))
 	msg =  ('1. '+ m.group(2))
 	msg += ('\n    '+ m.group(4))
